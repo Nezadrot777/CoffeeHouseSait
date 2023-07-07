@@ -1,2 +1,2 @@
 # CoffeeHouseSait
-Создание первого сайта
+Создание первого сайта на HTML, CSS, JS, PHP, MySql
