@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!--    подключаем файл стилей css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+<!--    добавим шрифты-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    
+    <title>Кофейня</title>
+</head>
+<body>
+   
+   <!--   шапка сайта-->
+   <div class='header-info'> 
+      <div class='container'>
+       <div class='header-line'>
+          
+<!--          вставляем логотип-->
+           <div class='header-logo'>
+               <img src="assets/images/coffee.png" alt="">
+           </div>
+           
+<!--          создание меню -->
+          <div class='nav'>
+              <a class='nav-item' href="index.php">ГЛАВНАЯ</a>
+              <a class='nav-item' href="price.html">МЕНЮ</a>
+              <a class='nav-item' href="about.html">О НАС</a>
+          </div> 
+          
+<!--          вставим иконку (кнопку) корзины-->
+          <div class='cart'>
+              <a href="#">
+                  <img class='cart-img' src="assets/images/cart.png" alt="">
+              </a>    
+          </div>
+          
+<!--          вставим иконку телефона и сам номер-->
+          <div class='phone'>
+            <div class='phone-holder'>
+              <div class='phone-img'>
+                  <img src="assets/images/phone.png" alt="">
+              </div>
+                <div class='number'><a class='num' href='#'>+7-919-191-32-01</a>
+                </div>
+            </div>
+<!--          сделаем текст под номером телефона-->
+             <div class='phone-text'>
+                 Свяжитесь с нами для <br> бронирования или <br> заполните специальную форму
+             </div>
+          </div>
+      
+<!--      сделаем кнопку "заказ столика"-->
+         <div class='btn'>
+             <a class='button' href='forma.html'>Забронировать</a>
+         </div>
+         
+<!--          меню мобильной версии  -->         
+         <div class='kofee-menu'>
+           
+            <button id='kofee'>
+             <img src="assets/images/menu.png" alt="">
+            </button>
+            
+           <div id='menu' class='kofee-slide disp'>
+               <a class='nav-item block' href="index.php">ГЛАВНАЯ</a>
+               <a class='nav-item block' href="price.html">МЕНЮ</a>
+               <a class='nav-item block' href="about.html">О НАС</a>
+           </div>
+            
+         </div>
+      
+       </div>
+       
+    </div> 
+          
+   </div>
+   
+<!--   меню и цены-->
+   <div class='dishes'>
+       
+       <div class='container'>
+           
+           <div class='dishes-title'>
+               Наши <span> Блюда</span>
+           </div>
+           
+           <div class='torts'>
+               <div class='torts-image'>
+                   <img src="assets/images/coffeeee.jpg" class='coffee'>
+               </div>
+               
+               <div class='torts-items'>
+                   <div class='tort-item'>
+                       <img src="assets/images/tort.jpg" class='tort'>
+                       <div class='tort-text'>
+                           Тортик "Наполеон" ----------------------- 200 руб.
+                       </div>
+                   </div>
+                              
+                   <div class='tort-item'>
+                       <img src="assets/images/tortik.jpg" class='tort'>
+                       <div class='tort-text'>
+                           Тортик "Летнее чудо" -------------------- 190 руб.
+                       </div>
+                   </div>
+               
+                   <div class='tort-item'>
+                       <img src="assets/images/kruassan.jpg" class='tort'>
+                       <div class='tort-text'>
+                           Круассан с яйцом и беконом -------------------- 160 руб.
+                       </div>
+                   </div>
+               
+               </div>
+               
+            </div>
+           
+       </div>
+       
+   </div>
+ 
+<!--   создание полноценного меню-->
+   <div class='menu'>
+       
+       <div class='container'>
+           
+           <div class='menu-title'>
+               Наше меню
+           </div>
+           
+           <div class='menu-items'>
+               
+               <div class='menu-item'>
+                  <div class='menu-image'>
+                      <img src="assets/images/price-1.png" class='menu-img'>
+                    </div>
+                                  
+                  <div class='menu-text'>
+                      Круассан с шоколадом
+                  </div>
+                  
+                  <div class='menu-subtext'>
+                      Свежий и вкусный
+                  </div>
+                  
+                  <div class='menu-button'>
+                      <a href='forma.html' class='menu-btn'>ЗАКАЗАТЬ</a>
+                  </div>
+                  
+               </div>
+               
+               <div class='menu-item'>
+                  <div class='menu-image'>
+                      <img src="assets/images/price-2.png" class='menu-img'>
+                  </div> 
+                  
+                  <div class='menu-text'>
+                      Торт с шоколадным кремом
+                  </div>
+                  
+                  <div class='menu-subtext'>
+                      Непередаваемые ощущения вкуса
+                  </div>
+                  
+                  <div class='menu-button'>
+                      <a href='#' class='menu-btn'>ЗАКАЗАТЬ</a>
+                  </div>
+                  
+               </div>
+               
+               <div class='menu-item'>
+                  <div class='menu-image'>
+                      <img src="assets/images/price-3.png" class='menu-img'>
+                   </div> 
+                  
+                  <div class='menu-text'>
+                      Бублик
+                  </div>
+                  
+                  <div class='menu-subtext'>
+                      Простой и в тоже время неповторимый
+                  </div>
+                  
+                  <div class='menu-button'>
+                      <a href='forma.html' class='menu-btn'>ЗАКАЗАТЬ</a>
+                  </div>
+                  
+               </div>
+               
+           </div>
+           
+       </div>
+       
+   </div>
+   
+   
+<!--   футер-->
+   <div class='footer'>
+        Coryright 2023   
+   </div> 
+   
+<!--путь к файлу app.js  -->
+<script src='assets/js/app.js'></script>     
+    
+</body>
+</html>

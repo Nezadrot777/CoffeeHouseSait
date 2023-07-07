@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!--    подключаем файл стилей css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+<!--    добавим шрифты-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    
+    <title>Кофейня</title>
+</head>
+<body>
+   
+   <!--   шапка сайта-->
+   <div class='header'> 
+      <div class='container'>
+      
+       <div class='header-line'>
+          
+<!--          вставляем логотип-->
+           <div class='header-logo'>
+               <img src="assets/images/coffee.png" alt="">
+           </div>
+           
+<!--          создание меню -->
+          <div class='nav'>
+              <a class='nav-item' href="index.php">ГЛАВНАЯ</a>
+              <a class='nav-item' href="price.html">МЕНЮ</a>
+              <a class='nav-item' href="about.html">О НАС</a>
+          </div> 
+          
+<!--          вставим иконку (кнопку) корзины-->
+          <div class='cart'>
+              <a href="#">
+                  <img class='cart-img' src="assets/images/cart.png" alt="">
+              </a>    
+          </div>
+          
+<!--          вставим иконку телефона и сам номер-->
+          <div class='phone'>
+            <div class='phone-holder'>
+              <div class='phone-img'>
+                  <img src="assets/images/phone.png" alt="">
+              </div>
+                <div class='number'><a class='num' href='#'>+7-919-191-32-01</a>
+                </div>
+            </div>
+<!--          сделаем текст под номером телефона-->
+             <div class='phone-text'>
+                 Свяжитесь с нами для <br> бронирования или <br> заполните специальную форму
+             </div>
+          </div>
+      
+<!--      сделаем кнопку "заказ столика"-->
+         <div class='btn'>
+             <a class='button' href='#'>Забронировать</a>
+         </div>
+         
+<!--          меню мобильной версии  -->         
+         <div class='kofee-menu'>
+           
+            <button id='kofee'>
+             <img src="assets/images/menu.png" alt="">
+            </button>
+            
+           <div id='menu' class='kofee-slide disp'>
+               <a class='nav-item block' href="index.php">ГЛАВНАЯ</a>
+               <a class='nav-item block' href="price.html">МЕНЮ</a>
+               <a class='nav-item block' href="about.html">О НАС</a>
+           </div>
+            
+         </div>
+      
+       </div>
+       
+                
+<!--   забронировать столик-->
+         <div class='zakaz'>
+         
+             <div class='zakaz-title'>
+                 Ваша <span> Бронь</span>
+             </div>
+             
+<!--        форма с подключением к базе данных-->
+             <form action="assets/database/connection.php" method="post" name="zakaz" onsubmit="return validateForm()";
+    class="codeship" action="forma.html" style="background-color: 0; z-index: 30; font-size: 26px; margin-top: 20px; left: 50px">
+        <table widht="100%">
+            <tbody>
+                <tr>
+                    <td> Ваше имя:</td>
+                    <td>
+                        <input name="firstname" placeholder="Введите имя">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Ваша фамилия:</td>
+                    <td>
+                        <input name="lastname" placeholder="Введите фамилию">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Дата бронирования:</td>
+                    <td>
+                        <input name="dateb" type="date" placeholder="Введите дату">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Телефон для связи:</td>
+                    <td>
+                        <input name="number" type="tel" placeholder="Введите номер">
+                    </td>
+                </tr>
+                <tr>
+                <div class='button_form'>
+                    <td colspan="2">
+                        <button type="submit" class='button_ok' onclick="alert('Данные отправлены')">
+                            Отправить форму
+                        </button>
+                        <button type="reset" class='button_ok' onclick="alert('Данные очищены')">
+                            Очистить форму
+                        </button> 
+                    </td>
+                </div>
+            </tr>
+        </tbody>
+    </table>
+</form> 
+             
+         </div>
+       
+    </div> 
+          
+   </div> 
+
+    
+<!--   футер-->
+   <div class='footer'>
+        Coryright 2023   
+   </div>
+                       
+<!--путь к файлу app.js  -->
+<script src='assets/js/app.js'></script>
+                        
+</body>
+</html>

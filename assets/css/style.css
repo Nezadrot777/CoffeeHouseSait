@@ -1,0 +1,1067 @@
+body {
+/*    избавимся от белых полос по бокам от фоновой картинки*/
+    margin: 0;
+/*    добавляем шрифт*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+/*    отступ логотипа от края*/
+    margin: 0px 166px;
+}
+
+/*главная страница*/
+.header {
+/*    фоновое изображение*/
+    background-image: url("../images/bg.jpg");
+/*    растянем на всю высоту экрана*/
+    height: 100vh;
+/*    убираем повторяющиеся картинки*/
+    background-repeat: no-repeat;
+/*    растянем на всю ширину экрана*/
+    background-size: cover; 
+}
+
+/*остальные страницы*/
+.header-info {
+/*    фоновое изображение*/
+    background-image: url("../images/bg.jpg");
+/*    растянем на всю высоту экрана*/
+    height: 25vh;
+/*    убираем повторяющиеся картинки*/
+    background-repeat: no-repeat;
+/*    растянем на всю ширину экрана*/
+    background-size: cover; 
+}
+
+.header-line {
+/*    сделаем внутренний отступ для логотипа сверху*/
+    padding-top: 50px;
+/*    сделаем расположение всех элементов в одну линию*/
+    display: flex;
+/*    выровняем все элементы*/
+    align-items: center;
+/*    добавим пространство между элементами меню*/
+    justify-content: space-around;
+}
+
+.nav-item {
+/*    изменим цвет всего меню*/
+    color: darkred;
+/*    уберем подчеркивания*/
+    text-decoration: none;
+/*    добавим толщину шрифта*/
+    font-weight: 700;
+/*    добавим размер шрифта*/
+    font-size: 14px;
+    
+/*    растояние между элементами*/
+    margin-right: 25px;
+    
+/*    добавим плавности*/
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+/*    при наведении мышки текст меняет свой цвет*/
+   color: red;
+}
+
+.cart {
+/*    сделаем родителем*/
+    position: relative;
+/*    добавим границу возле иконки "корзина"*/
+    border-right: 1px solid #FFFFFF;
+/*   отодвинем границу*/
+    padding-right: 10px;
+/*    укажем высоту*/
+    height: 50px;
+}
+
+.cart-img {
+/*    сделаем позицию "корзины" не зависимой от остального*/
+    position: absolute;
+/*    отспуп сверху*/
+    top: 18px;
+/*    отступ справа*/
+    right: 7px;
+}
+
+.num {
+/*   цвет телефона */
+    color: darkred;
+/*    убираем подчеркивание*/
+    text-decoration: none;
+/*    толщина шрифта*/
+    font-weight: 700;
+    
+/*    добавим плавности*/
+    transition: color 0.3s linear;
+}
+
+.num:hover {
+/*    при наведении мышки текст меняет свой цвет*/
+    color: red;
+}
+
+.phone-text {
+/*    размер шрифта*/
+    font-size: 14px;
+/*    толщина шрифта*/
+    font-weight: 400;
+/*    цвет шрифта*/
+    color: darkred;
+}
+
+.phone-holder {
+/*  все элементы в одну линию*/
+    display: flex;
+/*  выровнять по центру */
+    align-items: center;
+}
+
+.button {
+/*    цвет кнопки*/
+    background-color: darkred;
+/*   цвет текста */
+    color: white;
+/*    уберем подчеркивание*/
+    text-decoration: none;
+/*    отступы*/
+    padding: 14px 18px;
+/*    толщина шрифта*/
+    font-weight: 700;
+    
+/*    добавим плавности*/
+    transition: background-color 0.2s linear;
+}
+
+.button:hover {
+/*    при наведении мышки текст меняет свой цвет*/
+    background-color: goldenrod;
+}
+
+.header-down {
+/*    сделаем родителем*/
+    position: relative;
+}
+
+.header-title {
+/*    изменим цвет*/
+    color: #D67E35;
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 50px;
+/*    толщина шрифта */
+    font-weight: 400;
+    
+/*    выравнивание по центру*/
+    text-align: center;
+/*   независимое расположение */
+    position: absolute;
+/*    чтобы был слева*/
+    left: 0;
+    
+/*    отступы*/
+    margin-top: 222px;
+    margin-bottom: 12px;
+}
+
+.header-suptitle {
+/*    цвет шрифта*/
+    color: black;
+/*    размер шрифта*/
+    font-size: 18px;
+/*    добавим шрифт*/
+    font-family: 'Tinos', serif;
+}
+
+/*добавим полосочку слева от "ДОМ ЛУЧШЕГО КОФЕ"*/
+.header-suptitle:after {
+/*   независимое расположение */
+    position: absolute;
+    content: '';
+/*    высота полоски*/
+    height: 2px;
+/*    толщина полоски*/
+    width: 61px;
+/*    задний фон*/
+    background-color: black;
+/*    опустим полоску*/
+    top: 127px;
+    left: 56px;
+}
+
+/*добавим полосочку справа от "ДОМ ЛУЧШЕГО КОФЕ"*/
+.header-suptitle:before {
+/*   независимое расположение */
+    position: absolute;
+    content: '';
+/*    высота полоски*/
+    height: 2px;
+/*    толщина полоски*/
+    width: 61px;
+/*    задний фон*/
+    background-color: black;
+/*    опустим полоску*/
+    top: 127px;
+    left: 312px;
+}
+
+.header-button {
+/*    цвет фона*/
+    background-color: #FF7400;
+/*    отступы*/
+    padding: 14px 28px;
+/*    цвет текста*/
+    color: white;
+/*    размер текста*/
+    font-size: 14px;
+/*    толщина текста*/
+    font-weight: 700;
+/*    добавим шрифт*/
+    font-family: 'Open Sans', sans-serif;
+/*    убираем нижнее подчеркивание*/
+    text-decoration: none;
+    
+/*    добавим плавности*/
+    transition: background-color 0.3s linear;
+}
+
+.header-button:hover {
+ /*    при наведении мышки текст меняет свой цвет*/
+    background-color: #904506;
+}
+
+.cards-holder {
+/*  все элементы в одну линию*/
+    display: flex; 
+/*    добавим пространство между элементами меню*/
+    justify-content: space-between;
+}
+
+.card {
+/*    ширина*/
+    width: 349px;
+/*    параметры теней*/
+    box-shadow: 10px 10px 40px 20px #0000001A;
+/*    цвет фона*/
+    background-color: #fff;
+/*    карточки заходят на фон на основной странице*/
+    margin-top: -80px;
+/*    расположение текста в карточках*/
+    padding: 10px 10px;
+}
+
+.card-image {
+/*  все элементы в одну линию*/
+    display: flex;
+/*    расположение по центру*/
+    justify-content: center;
+/*    растояние между карточками*/
+    margin-right: 31px;
+/*    отступ*/
+    padding-top: 31px;
+}
+
+.card-title {
+/*  все элементы в одну линию*/
+    display: flex;
+/*    расположение по центру*/
+    justify-content: center;
+/*    отступ*/
+    margin-bottom: 20px;
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 26px;
+/*    толщина шрифта */
+    font-weight: 400;
+}
+
+.card-title span {
+/*    цвет выделенных слов в карточках*/
+    color: #D67E35;
+}
+
+.card-desc {
+/*    расположение текста внутри карточки по центру*/
+    text-align: center;
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 26px;
+/*    толщина шрифта */
+    font-weight: 400;
+/*    цыет текста*/
+    color: #656363;
+}
+
+.history {
+/*    отступ*/
+    margin-top: 166px;
+    padding-bottom: 200px;
+}
+
+.history-title {
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 54px;
+/*    толщина шрифта */
+    font-weight: 400;  
+/*    размеры области для расположения*/
+    width: 444px;
+/*    расположения по центру*/
+    text-align: center;
+    /*    отступ*/
+    margin-top: 21px;
+}
+
+.history-title span {
+/*    цвет выделенных слов в карточках*/
+    color: #D67E35;
+}
+
+.history-desc {
+/*    цвет текста*/
+    color: #656363;
+/*    размер текста*/
+    font-size: 16px;
+/*    размеры области для расположения*/
+    width: 444px;
+/*    расположения по центру*/
+    text-align: center;
+}
+
+.history-number {
+/*  все элементы в одну линию*/
+    display: flex; 
+/*    ширина*/
+    width: 444px;
+/*    расположение по центру*/
+    justify-content: center;
+/*    отступ*/
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.number-item {
+/*    расстояние между элементами*/
+    margin-right: 60px;
+/*    расположение по центру*/
+    text-align: center;
+/*    размер шрифта*/
+    font-size: 40px;
+/*    цвет*/
+    color: #BC9060;
+}
+
+.number-item span {
+/*    переместим текст под цифры*/
+    display: block;
+/*    цвет*/
+    color: #000;
+}
+
+.history-images {
+/*    сделаем родителем*/
+    position: relative;
+}
+
+.history-holder {
+/*  все элементы в одну линию*/
+    display: flex;     
+}
+
+.images-1 {
+/*   расположение */
+    position: absolute;
+    z-index: 0;
+    top: 45px;
+    left: 130px;
+}
+
+.images-2 {
+/*   расположение */
+    position: absolute;
+    z-index: 999;
+    top: -89px;
+    left: 296px;
+}
+
+.images-3 {
+/*   расположение */
+    position: absolute;
+    z-index: 999;
+    top: 226px;
+    left: 254px;
+}
+
+.black-block {
+/*    добавим фон*/
+    background-image: url("../images/black-bg.jpg");
+/*    отступы*/
+    padding: 80px 0;
+}
+
+.left-title {
+/*   цвет шрифта */
+    color: #D67E34;
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 52px;
+/*    толщина шрифта */
+    font-weight: 400; 
+/*   отступ */
+    margin-bottom: 20px;
+}
+
+.left-text {
+/*    размер шрифта*/
+    font-size: 24px;
+/*    толщина шрифта */
+    font-weight: 700;  
+/*    цвет шрифта*/
+    color: white;
+}
+
+.right-btn {
+/*    цвет кнопки*/
+    background-color: darkred;
+/*   цвет текста */
+    color: white;
+/*    уберем подчеркивание*/
+    text-decoration: none;
+/*    отступы*/
+    padding: 14px 18px;
+/*    толщина шрифта*/
+    font-weight: 700;
+}
+
+.block-holder {
+/*  все элементы в одну линию*/
+    display: flex; 
+/*    добавим пространство между элементами меню*/
+    justify-content: space-between;
+/*    размещение в центре фона*/
+    align-items: center;
+}
+
+.dishes-title {
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 54px;
+/*    толщина шрифта */
+    font-weight: 400;    
+/*    размещение в центре*/
+    text-align: center;
+/*    отступ*/
+    padding-top: 132px;
+    margin-bottom: 136px;
+}
+
+.dishes-title span {
+/*    цвет слова*/
+    color: #D67E34; 
+}
+
+.torts {
+/*  все элементы в одну линию*/
+    display: flex;  
+/*    расположение в центре*/
+    justify-content: center;
+}
+
+.tort-item {
+/*  все элементы в одну линию*/
+    display: flex; 
+/*    размещение в центре фона*/
+    align-items: center;
+/*    отступ*/
+    margin-bottom: 29px;
+}
+
+.torts-image {
+/*   отступ */
+    margin-right: 20px;    
+}
+
+.tort-text {
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 26px; 
+/*    отступ*/
+    margin-left: 20px;   
+}
+
+.menu {
+/*   фоновое изображение */
+    background-image: url("../images/menu-bg.jpg");
+    background-repeat: no-repeat;
+/*    размер*/
+    background-size: cover;
+/*    отступ*/
+    padding-bottom: 100px;
+}
+
+.menu-title {
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 54px;
+/*    отступ*/
+    padding-top: 98px;
+    padding-bottom: 138px;
+/*    цвет шрифта*/
+    color: white;
+/*    выравнивание*/
+    text-align: center;
+}
+
+.menu-item {
+/*    цвет фона*/
+    background-color: white;
+/*    расположение по центру*/
+    text-align: center;
+/*    ширина*/
+    width: 33%;
+/*    отступ*/
+    padding-top: 80px;
+    padding-bottom: 30px;
+    margin-right: 20px;
+}
+
+.menu-text {
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 26px;
+/*    отступ*/
+    padding-top: 16px;
+    padding-bottom: 17px;
+}
+
+.menu-subtext {
+/*    размер шрифта*/
+    font-size: 16px;   
+}
+
+.menu-btn {
+/*   цвет фона */
+    background-color: #D67E34;
+/*    убираем нижнее подчеркивание*/
+    text-decoration: none;
+/*    отступ*/
+    padding: 14px 67px; 
+/*    цвет текста*/
+    color: white;
+/*    размер шрифта*/
+    font-size: 16px;
+/*    толщина шрифта */
+    font-weight: 700;
+/*    тени*/
+    box-shadow: 5px 5px 10px 0px #00000040;
+}
+
+.menu-button {
+/*    отступ*/
+    margin-top: 20px;
+}
+
+.price-img {
+/*    расположение независимо*/
+    position: absolute;
+/*    расположение*/
+    bottom: 0;
+    right: 101px;
+}
+
+.menu-image {
+/*    расположение*/
+    position: relative;
+}
+
+.price-420 {
+/*    расположение независимо*/
+    position: absolute;    
+/*    расположение*/
+    bottom: 20px;
+    right: 115px;
+/*    цвет текста*/
+    color: white;
+/*    размер шрифта*/
+    font-size: 20px;
+}
+
+.menu-items {
+/*    расположение в одну строку*/
+    display: flex;
+/*    расположение по центру*/
+    justify-content: center;    
+}
+
+.coment {
+/*   цвет фона */
+    background-color: #E5E5E5;
+/*    отступы*/
+    padding-top: 104px;
+    padding-bottom: 139px;
+}
+
+.coment-text {
+/*    выравнивание текста по центру*/
+    text-align: center;
+/*    добавляем шрифт*/
+    font-style: italic;
+/*    размер шрифта*/
+    font-size: 20px;
+/*    отступ*/
+    margin-bottom: 20px;
+}
+
+.coment-img {
+/*    форма фотографии*/
+    border-radius: 50px;
+}
+
+.coment-image {
+/*    размещение по центру фото*/
+    text-align: center;
+}
+
+.coment-type {
+/*    размер шрифта*/
+    font-size: 20px;
+/*    толщина шрифта */
+    font-weight: 600;  
+/*    размещение по центру фото*/
+    text-align: center;
+}
+
+.coment-name {
+/*    отступ*/
+    padding-top: 9px;
+/*    выравнивание текста по центру*/
+    text-align: center;
+/*    ширина шрифта*/
+    font-weight: 400;
+/*    размер шрифта*/
+    font-size: 20px;    
+}
+
+.galery-title {
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 54px;  
+/*    выравнивание*/
+    text-align: center;
+/*    отступ*/
+    padding-top: 100px;
+    margin-bottom: 60px;
+}
+
+.galery-title span {
+/*    цвет выделенных слов*/
+    color: #D67E34; 
+}
+
+.galery-content {
+/*  все элементы в одну линию*/
+    display: flex;  
+/*    расположение по центру*/
+    justify-content: center;
+}
+
+.galery-left {
+/*    отступ*/
+    margin-right: 20px;
+}
+
+.galery-down,
+.galery-up {
+/*  все элементы в одну линию*/
+    display: flex;  
+/*    расположение*/
+    justify-content: space-around;
+/*    отступ*/
+    margin-bottom: 20px;
+}
+
+.cook {
+/*    отступ*/
+    padding-bottom: 100px;
+}
+
+.cook-title {
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 54px;  
+/*    выравнивание*/
+    text-align: center; 
+/*    отступ*/
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.cook-title span {
+/*    цвет выделенных слов*/
+    color: #D67E34;     
+} 
+
+.cook-content {
+/*  все элементы в одну линию*/
+    display: flex;  
+/*    расположение*/
+    justify-content: space-around;    
+}
+
+.footer {
+/*   цвет фона */
+    background-color: black;
+/*    отступ*/
+    padding: 50px 0;
+/*цвет текста*/
+    color: white;
+/*    выравнивание*/
+    text-align: center;
+}
+
+.menu-img {
+/*    ширина*/
+    width: 60%;
+    height: 60%;
+}
+
+.kofee-menu {
+/*    скроем при обычном просмотре*/
+    display: none;
+}
+
+.block {
+/*    расположение друг за другом*/
+    display: block;    
+}
+
+.kofee-slide {
+/*    расположение независимо*/
+    position: absolute; 
+}
+
+button {
+/*   граница */
+    border: none;
+/*   внешняя граница*/
+    outline: none;
+/*   цвет*/
+    background-color: transparent;
+}
+
+.disp {
+/*    скрываем*/
+    display: none;
+}
+
+.about {
+/*    расположение*/
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+/*    расположение*/
+    display: block;
+    justify-content: center;   
+}
+
+.info-title {
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 54px;
+/*    толщина шрифта */
+    font-weight: 400;  
+/*    размеры области для расположения*/
+    width: 444px;
+/*    расположения по центру*/
+    text-align: center;
+    /*    отступ*/
+    margin-top: 21px;
+}
+
+.info-title span {
+/*    цвет выделенных слов в карточках*/
+    color: #D67E35;
+}
+
+.info-text {
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    цвет текста*/
+    color: #656363;
+/*    размер текста*/
+    font-size: 22px;
+/*    размеры области для расположения*/
+    width: 444px;
+/*    расположения по центру*/
+    text-align: center;
+}
+
+.map {
+/*    отспуп сверху*/
+    top: 1000px;
+/*    отступ справа*/
+    right: 290px;
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif;
+/*    размер шрифта*/
+    font-size: 28px;
+/*    толщина шрифта */
+    font-weight: 400;  
+/*    размеры области для расположения*/
+    width: 444px;
+/*    расположения по центру*/
+    text-align: center;
+/*    отступ*/
+    margin-top: 21px;
+}
+
+.map-title span {
+/*    цвет выделенных слов в карточках*/
+    color: #D67E35;    
+}
+
+.map-img {
+/*   отступ */
+    margin-top: 10px;
+}
+
+.zakaz {
+/*    вставим нужный шрифт*/
+    font-family: 'Tinos', serif; 
+/*    расположение друг за другом*/
+    display: block; 
+/*    отступ*/
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.zakaz-title {
+/*    чтобы был слева*/
+    left: 50px;
+/*    размер шрифта*/
+    font-size: 40px;
+/*    толщина шрифта */
+    font-weight: 400;
+}
+
+.zakaz-title span {
+/*    цвет выделенных слов в карточках*/
+    color: #D67E35;
+}
+
+.zakaz-subtitle {
+    
+}
+
+.button_form {
+/*    расположение*/
+    display: flex;
+}
+
+.button_ok {
+/*    цвет фона*/
+    background-color: #FF7400;
+/*    отступы*/
+    padding: 14px 28px;
+    margin-top: 30px;
+/*    цвет текста*/
+    color: white;
+/*    размер текста*/
+    font-size: 14px;
+/*    толщина текста*/
+    font-weight: 700;
+/*    добавим шрифт*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/*Адаптация*/
+@media (max-width: 1500px) {
+    
+    .galery-content {
+/*        расположение*/
+        display: block;
+    }
+    
+    .img-gal,
+    .galery-up,
+    .galery-down {
+/*        расположение друг за другом*/
+        display: block;
+/*        выравнивание*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .img-gal {
+/*        отступы*/
+        margin-bottom: 20px;
+    }
+    
+    .galery-left {
+/*       отступы */
+        margin-right: 0;
+    }
+    
+}
+
+
+@media (max-width: 1300px) {
+    
+    .menu-items {
+/*        расположение друг за другом*/
+        display: block;        
+    }
+    
+    .menu-item {
+/*        расположение по середине*/
+       margin: 20px auto;
+/*        ширина*/
+        width: 600px;
+    }
+    
+    .heder-titile {
+/*        выравнивание*/
+      position: static;
+    }
+    
+    .header-suptitle:before,
+    .header-suptitle:after {
+/*        убираем полосочки*/
+        content: none;
+    } 
+    
+    .cook-content {
+/*        расположение друг за другом*/
+        display: block;    
+    }
+    
+    .cook-content img {
+/*        расположение друг за другом*/
+        display: block;
+/*        выравнивание по середине*/
+        margin-right: auto;
+        margin-left: auto;
+/*        отступ*/
+        margin-bottom: 30px;
+    }
+    
+    .block-holder {
+ /*        расположение друг за другом*/
+        display: block;   
+    }
+    
+    .left-title,
+    .left-text,
+    .right-button {
+/*        выравнивание текста по центру*/
+        text-align: center;
+    }
+    
+    .history-images {
+/*        отключим картинки*/
+        display: none;
+    }
+    
+    .history-title,
+    .history-desc,
+    .history-number {
+/*        ширина */
+       width: auto; 
+    }
+    
+}
+
+
+@media (max-width: 1185px) {
+    
+    .kofee-menu {
+/*        расположение*/
+        display: block;
+    }
+    
+    .nav,
+    .cart,
+    .phone,
+    .btn {
+/*        скрываем*/
+        display: none;
+    }
+    
+    .header-line {
+/*        расположение*/
+        justify-content: space-between;
+    }
+    
+    .torts-image {
+/*        скрываем*/
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+    
+    .cards-holder {
+/*        расположение*/
+        display: block;      
+    }
+    
+    .card {
+/*       ширина */
+        width: 100%;
+/*        отступ*/
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+    
+}
+
+
+@media (max-width: 780px) {
+    
+    .history-holder {
+/*        расположение*/
+        display: block;           
+    }
+    
+    .menu-item {
+/*        ширина*/
+        width: auto;    
+    }
+    
+    .high {
+/*        скрываем*/
+        display: none;        
+    }
+    
+    .container {
+/*        отступ*/
+        margin: auto 40px;
+    }
+    
+    .number-item {
+/*        уменьшим шрифт*/
+        font-size: 23px;  
+    }
+    
+}
